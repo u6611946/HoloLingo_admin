@@ -1,0 +1,269 @@
+/* ─────────────────────────────
+   HOLOLINGO ADMIN THEME
+───────────────────────────── */
+
+:root {
+  --adm-bg: #080e14;
+  --adm-bg2: #0d1a22;
+  --adm-bg3: #111d26;
+  --adm-bg4: #0a1218;
+
+  --adm-border: #0d2030;
+  --adm-border2: #1a2d3a;
+
+  --adm-cyan: #00e5ff;
+  --adm-cyan-dim: rgba(0, 229, 255, 0.1);
+  --adm-cyan-bdr: rgba(0, 229, 255, 0.25);
+
+  --adm-purple: #a78bfa;
+  --adm-yellow: #ffc800;
+  --adm-green: #4ade80;
+  --adm-red: #ff6b6b;
+
+  --adm-text: #ffffff;
+  --adm-text2: #d7e0e7;
+  --adm-text3: #7b93a5;
+  --adm-text4: #496172;
+}
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--adm-bg);
+  color: var(--adm-text);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+}
+
+/* MAIN LAYOUT */
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(0, 229, 255, 0.08),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(167, 139, 250, 0.06),
+      transparent 25%
+    ),
+    var(--adm-bg);
+  color: var(--adm-text);
+  overflow: hidden;
+}
+
+/* CONTENT AREA */
+
+.admin-main {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+/* CUSTOM SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 229, 255, 0.14);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 229, 255, 0.3);
+}
+
+/* GLASS CARD */
+
+.admin-card {
+  background: rgba(13, 26, 34, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 22px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 22px;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.02),
+    0 10px 40px rgba(0,0,0,0.45);
+}
+
+/* HEADINGS */
+
+.admin-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--adm-text);
+  margin-bottom: 6px;
+}
+
+.admin-subtitle {
+  color: var(--adm-text3);
+  font-size: 14px;
+}
+
+/* BUTTON */
+
+.admin-btn {
+  height: 42px;
+  padding: 0 18px;
+  border-radius: 12px;
+  border: 1px solid var(--adm-cyan-bdr);
+  background: var(--adm-cyan-dim);
+  color: var(--adm-cyan);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.admin-btn:hover {
+  transform: translateY(-1px);
+  background: rgba(0, 229, 255, 0.16);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.14);
+}
+
+/* INPUT */
+
+.admin-input {
+  width: 100%;
+  height: 44px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: 1px solid var(--adm-border2);
+  background: var(--adm-bg2);
+  color: var(--adm-text);
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.admin-input:focus {
+  border-color: var(--adm-cyan);
+  box-shadow: 0 0 0 4px rgba(0, 229, 255, 0.08);
+}
+
+/* TABLE */
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  text-align: left;
+  font-size: 12px;
+  color: var(--adm-text3);
+  font-weight: 600;
+  padding: 14px;
+  border-bottom: 1px solid var(--adm-border);
+}
+
+.admin-table td {
+  padding: 16px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  font-size: 14px;
+  color: var(--adm-text2);
+}
+
+/* STATUS */
+
+.status-active {
+  color: var(--adm-green);
+}
+
+.status-warning {
+  color: var(--adm-yellow);
+}
+
+.status-danger {
+  color: var(--adm-red);
+}
+
+/* BADGES */
+
+.admin-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.admin-badge-cyan {
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  color: var(--adm-cyan);
+}
+
+.admin-badge-red {
+  background: rgba(255, 107, 107, 0.1);
+  border: 1px solid rgba(255, 107, 107, 0.2);
+  color: var(--adm-red);
+}
+
+/* GRID */
+
+.admin-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.admin-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.admin-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.admin-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .admin-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-layout {
+    flex-direction: column;
+  }
+
+  .admin-grid-2,
+  .admin-grid-3,
+  .admin-grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-main {
+    padding: 16px;
+  }
+}
