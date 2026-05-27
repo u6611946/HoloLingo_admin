@@ -135,11 +135,19 @@ export default function Sidebar() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            fontSize: '18px',
             boxShadow: '0 0 24px rgba(0,229,255,.12)',
+            overflow: 'hidden',
           }}
         >
-          🌐
+          <Image
+            src="/Component 3.png"
+            alt="Hololingo Logo"
+            width={26}
+            height={26}
+            style={{
+              objectFit: 'contain',
+            }}
+          />
         </div>
 
         <div>
@@ -253,7 +261,7 @@ export default function Sidebar() {
                     >
                       {item.icon === 'robot' ? (
                         <Image
-                          src="/robot 1.png"
+                          src="/robot1.png"
                           alt="Robot"
                           width={20}
                           height={20}
