@@ -102,19 +102,18 @@ export default function Sidebar() {
     <aside
       style={{
         width: '260px',
-        background:
-          'linear-gradient(180deg, #0b141c 0%, #091018 100%)',
-
-        borderRight: '1px solid rgba(255,255,255,.05)',
-
-        display: 'flex',
-        flexDirection: 'column',
-        flexShrink: 0,
+        height: '100vh',
 
         position: 'sticky',
         top: 0,
 
-        height: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+
+        background:
+          'linear-gradient(180deg, #0b141c 0%, #071018 100%)',
+
+        borderRight: '1px solid rgba(255,255,255,.05)',
 
         overflowY: 'auto',
 
@@ -125,6 +124,7 @@ export default function Sidebar() {
       <div
         style={{
           padding: '24px 20px',
+
           borderBottom: '1px solid rgba(255,255,255,.05)',
 
           display: 'flex',
@@ -140,9 +140,9 @@ export default function Sidebar() {
             borderRadius: '14px',
 
             background:
-              'linear-gradient(135deg, rgba(0,229,255,.18), rgba(0,229,255,.06))',
+              'linear-gradient(135deg, rgba(0,229,255,.18), rgba(0,229,255,.05))',
 
-            border: '1px solid rgba(0,229,255,.2)',
+            border: '1px solid rgba(0,229,255,.18)',
 
             display: 'flex',
             alignItems: 'center',
@@ -160,9 +160,12 @@ export default function Sidebar() {
           <div
             style={{
               color: 'var(--adm-text)',
+
               fontSize: '16px',
+
               fontWeight: 700,
-              letterSpacing: '-0.02em',
+
+              letterSpacing: '-0.03em',
             }}
           >
             Hololingo
@@ -171,7 +174,9 @@ export default function Sidebar() {
           <div
             style={{
               color: 'var(--adm-text3)',
+
               fontSize: '11px',
+
               marginTop: '3px',
             }}
           >
@@ -183,21 +188,21 @@ export default function Sidebar() {
       {/* NAVIGATION */}
       <div
         style={{
-          padding: '18px 14px',
           flex: 1,
+          padding: '18px 14px',
         }}
       >
         {navItems.map((sec) => (
           <div
             key={sec.section}
             style={{
-              marginBottom: '26px',
+              marginBottom: '28px',
             }}
           >
-            {/* SECTION */}
+            {/* SECTION TITLE */}
             <div
               style={{
-                color: '#486171',
+                color: '#4c6374',
 
                 fontSize: '10px',
 
@@ -215,7 +220,7 @@ export default function Sidebar() {
               {sec.section}
             </div>
 
-            {/* ITEMS */}
+            {/* NAV ITEMS */}
             {sec.items.map((item) => {
               const active = path.startsWith(item.href);
 
@@ -247,20 +252,20 @@ export default function Sidebar() {
                         ? '1px solid rgba(0,229,255,.18)'
                         : '1px solid transparent',
 
-                      transition: '0.2s ease',
+                      transition: '.2s ease',
 
                       cursor: 'pointer',
 
                       boxShadow: active
-                        ? '0 0 22px rgba(0,229,255,.08)'
+                        ? '0 0 20px rgba(0,229,255,.08)'
                         : 'none',
                     }}
                   >
                     {/* ICON */}
                     <div
                       style={{
-                        width: '36px',
-                        height: '36px',
+                        width: '38px',
+                        height: '38px',
 
                         borderRadius: '12px',
 
@@ -291,8 +296,8 @@ export default function Sidebar() {
                         <Image
                           src="/robot 1.png"
                           alt="Robot"
-                          width={18}
-                          height={18}
+                          width={20}
+                          height={20}
                           style={{
                             objectFit: 'contain',
                           }}
@@ -305,6 +310,8 @@ export default function Sidebar() {
                     {/* LABEL */}
                     <span
                       style={{
+                        flex: 1,
+
                         color: active
                           ? 'var(--adm-cyan)'
                           : 'var(--adm-text2)',
@@ -312,8 +319,6 @@ export default function Sidebar() {
                         fontSize: '13px',
 
                         fontWeight: active ? 600 : 500,
-
-                        flex: 1,
                       }}
                     >
                       {item.label}
@@ -325,7 +330,7 @@ export default function Sidebar() {
                         style={{
                           background:
                             item.badgeStyle === 'alert'
-                              ? 'rgba(255,107,107,.15)'
+                              ? 'rgba(255,107,107,.14)'
                               : 'rgba(0,229,255,.10)',
 
                           color:
@@ -361,8 +366,6 @@ export default function Sidebar() {
       {/* FOOTER */}
       <div
         style={{
-          marginTop: 'auto',
-
           padding: '16px',
 
           borderTop: '1px solid rgba(255,255,255,.05)',
@@ -391,9 +394,9 @@ export default function Sidebar() {
               borderRadius: '50%',
 
               background:
-                'linear-gradient(135deg, rgba(0,229,255,.18), rgba(0,229,255,.06))',
+                'linear-gradient(135deg, rgba(0,229,255,.18), rgba(0,229,255,.05))',
 
-              border: '1px solid rgba(0,229,255,.2)',
+              border: '1px solid rgba(0,229,255,.18)',
 
               display: 'flex',
               alignItems: 'center',
