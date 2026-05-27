@@ -1,25 +1,14 @@
-import Sidebar from '../../components/admin/Sidebar';
+import './globals.css';
 
 export const metadata = {
-  title: 'Hololingo Admin',
+  title: 'Hololingo',
+  description: 'Hololingo Admin Panel',
 };
 
-export default function AdminLayout({ children }) {
+export default function RootLayout({ children }) {
   return (
-    <div className="admin-layout">
-      <Sidebar />
-
-      <main
-        style={{
-          flex: 1,
-          minWidth: 0,
-          display: 'flex',
-          flexDirection: 'column',
-          background: 'var(--adm-bg)',
-        }}
-      >
-        {children}
-      </main>
-    </div>
+    <html lang="en">
+      <body>{children}</body>
+    </html>
   );
 }

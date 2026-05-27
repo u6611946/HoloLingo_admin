@@ -103,20 +103,14 @@ export default function Sidebar() {
       style={{
         width: '260px',
         height: '100vh',
-
         position: 'sticky',
         top: 0,
-
         display: 'flex',
         flexDirection: 'column',
-
         background:
           'linear-gradient(180deg, #0b141c 0%, #071018 100%)',
-
         borderRight: '1px solid rgba(255,255,255,.05)',
-
         overflowY: 'auto',
-
         backdropFilter: 'blur(12px)',
       }}
     >
@@ -124,9 +118,7 @@ export default function Sidebar() {
       <div
         style={{
           padding: '24px 20px',
-
           borderBottom: '1px solid rgba(255,255,255,.05)',
-
           display: 'flex',
           alignItems: 'center',
           gap: '14px',
@@ -136,20 +128,14 @@ export default function Sidebar() {
           style={{
             width: '44px',
             height: '44px',
-
             borderRadius: '14px',
-
             background:
               'linear-gradient(135deg, rgba(0,229,255,.18), rgba(0,229,255,.05))',
-
             border: '1px solid rgba(0,229,255,.18)',
-
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-
             fontSize: '18px',
-
             boxShadow: '0 0 24px rgba(0,229,255,.12)',
           }}
         >
@@ -160,11 +146,8 @@ export default function Sidebar() {
           <div
             style={{
               color: 'var(--adm-text)',
-
               fontSize: '16px',
-
               fontWeight: 700,
-
               letterSpacing: '-0.03em',
             }}
           >
@@ -174,9 +157,7 @@ export default function Sidebar() {
           <div
             style={{
               color: 'var(--adm-text3)',
-
               fontSize: '11px',
-
               marginTop: '3px',
             }}
           >
@@ -203,17 +184,11 @@ export default function Sidebar() {
             <div
               style={{
                 color: '#4c6374',
-
                 fontSize: '10px',
-
                 textTransform: 'uppercase',
-
                 letterSpacing: '.14em',
-
                 padding: '0 10px',
-
                 marginBottom: '10px',
-
                 fontWeight: 700,
               }}
             >
@@ -237,25 +212,17 @@ export default function Sidebar() {
                       display: 'flex',
                       alignItems: 'center',
                       gap: '12px',
-
                       padding: '11px 12px',
-
                       borderRadius: '14px',
-
                       marginBottom: '5px',
-
                       background: active
                         ? 'linear-gradient(135deg, rgba(0,229,255,.12), rgba(0,229,255,.04))'
                         : 'transparent',
-
                       border: active
                         ? '1px solid rgba(0,229,255,.18)'
                         : '1px solid transparent',
-
                       transition: '.2s ease',
-
                       cursor: 'pointer',
-
                       boxShadow: active
                         ? '0 0 20px rgba(0,229,255,.08)'
                         : 'none',
@@ -266,29 +233,21 @@ export default function Sidebar() {
                       style={{
                         width: '38px',
                         height: '38px',
-
                         borderRadius: '12px',
-
                         background: active
                           ? 'rgba(0,229,255,.12)'
                           : 'rgba(255,255,255,.03)',
-
                         border: active
                           ? '1px solid rgba(0,229,255,.15)'
                           : '1px solid rgba(255,255,255,.03)',
-
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-
                         flexShrink: 0,
-
                         overflow: 'hidden',
-
                         color: active
                           ? 'var(--adm-cyan)'
                           : 'var(--adm-text3)',
-
                         fontSize: '16px',
                       }}
                     >
@@ -311,13 +270,10 @@ export default function Sidebar() {
                     <span
                       style={{
                         flex: 1,
-
                         color: active
                           ? 'var(--adm-cyan)'
                           : 'var(--adm-text2)',
-
                         fontSize: '13px',
-
                         fontWeight: active ? 600 : 500,
                       }}
                     >
@@ -344,11 +300,8 @@ export default function Sidebar() {
                               : '1px solid rgba(0,229,255,.18)',
 
                           borderRadius: '999px',
-
                           padding: '4px 8px',
-
                           fontSize: '10px',
-
                           fontWeight: 700,
                         }}
                       >
@@ -367,7 +320,6 @@ export default function Sidebar() {
       <div
         style={{
           padding: '16px',
-
           borderTop: '1px solid rgba(255,255,255,.05)',
         }}
       >
@@ -376,13 +328,9 @@ export default function Sidebar() {
             display: 'flex',
             alignItems: 'center',
             gap: '10px',
-
             padding: '12px',
-
             background: 'rgba(255,255,255,.03)',
-
             borderRadius: '16px',
-
             border: '1px solid rgba(255,255,255,.04)',
           }}
         >
@@ -390,22 +338,15 @@ export default function Sidebar() {
             style={{
               width: '40px',
               height: '40px',
-
               borderRadius: '50%',
-
               background:
                 'linear-gradient(135deg, rgba(0,229,255,.18), rgba(0,229,255,.05))',
-
               border: '1px solid rgba(0,229,255,.18)',
-
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-
               color: 'var(--adm-cyan)',
-
               fontSize: '13px',
-
               fontWeight: 700,
             }}
           >
@@ -416,9 +357,7 @@ export default function Sidebar() {
             <div
               style={{
                 color: 'var(--adm-text2)',
-
                 fontSize: '13px',
-
                 fontWeight: 600,
               }}
             >
@@ -428,9 +367,7 @@ export default function Sidebar() {
             <div
               style={{
                 color: 'var(--adm-text4)',
-
                 fontSize: '10px',
-
                 marginTop: '2px',
               }}
             >
@@ -442,11 +379,8 @@ export default function Sidebar() {
             style={{
               width: '8px',
               height: '8px',
-
               borderRadius: '50%',
-
               background: '#4ade80',
-
               boxShadow: '0 0 10px #4ade80',
             }}
           />
