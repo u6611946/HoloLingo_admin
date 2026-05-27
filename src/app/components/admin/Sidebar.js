@@ -261,7 +261,7 @@ export default function Sidebar() {
                     >
                       {item.icon === 'robot' ? (
                         <Image
-                          src="/robot1.png"
+                          src="/robot 1.png"
                           alt="Robot"
                           width={20}
                           height={20}
