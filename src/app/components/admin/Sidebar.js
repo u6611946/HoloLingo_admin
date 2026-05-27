@@ -140,7 +140,7 @@ export default function Sidebar() {
           }}
         >
           <Image
-            src="/Component 3.png"
+            src="/ Hololingo_logo.png"
             alt="Hololingo Logo"
             width={26}
             height={26}
